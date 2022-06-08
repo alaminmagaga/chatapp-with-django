@@ -23,10 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-t#o5jramymfkos$v3c04iw*trq55t$pvsmm%07r0=bz8q=a^@!'
 
+import django
+django.setup()
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['agritech12.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['chatapp1043.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
