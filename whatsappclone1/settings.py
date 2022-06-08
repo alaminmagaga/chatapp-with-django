@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = 'whatsappclone1.wsgi.application'
+
 ASGI_APPLICATION = 'whatsappclone1.asgi.application'
 
 # LEARN CHANNELS
@@ -95,8 +95,8 @@ CACHES={
         },
         "OPTIONS":{
               "CLIENT_CLASS:"django_redis.client.DefaultClient"
-    }
-  }
+    },
+  },
 }
          
                   
