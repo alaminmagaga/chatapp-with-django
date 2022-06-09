@@ -16,7 +16,6 @@ from django.urls import path
 
 from channels.routing import ProtocolTypeRouter, URLRouter
 
-from channels.auth import AuthMiddlewareStack
 
 from chats.consumers import PersonalChatConsumer
 
@@ -24,6 +23,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'whatsappclone1.settings')
 django.setup()
 
 application = get_asgi_application()
+from channels.auth import AuthMiddlewareStack
 
 
 application = ProtocolTypeRouter({
