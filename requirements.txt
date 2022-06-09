@@ -22,3 +22,4 @@ django-fontawesome-5
 whitenoise
 daphne
 channels
+django-redis
