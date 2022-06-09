@@ -6,6 +6,7 @@
         {% csrf_token %}
         {{form.as_p}}
         <input type="submit" value="Register" class="btn btn-primary">
+        <p class="message">Already have an account? <a href="{% url 'accounts:register' %}">Login</a></p>
     </form>
 </div>
 {% endblock %}
